@@ -1,0 +1,4 @@
+# make release_tag
+release_tag:
+	git checkout master
+	docker-compose run --rm ruby sh -c 'apk --update --upgrade add --no-cache git openssh && rake release:source_control_push[https://<github_api_key>@github.com/rvillage/rubocop-automata]'

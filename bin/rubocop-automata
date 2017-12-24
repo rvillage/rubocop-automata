@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'rubocop_automata'
+
+RubocopAutomata.boot(github_email: ARGV[0], github_username: ARGV[1])
