@@ -4,15 +4,16 @@ jobs:
   rake_build:
     working_directory: /usr/src/app
     docker:
-      - image: ruby:2.4.2-alpine3.6
+      - image: ruby:2.5-alpine3.7
     steps:
       - checkout
       - run: apk --update --upgrade add --no-cache git openssh
+      - run: bundle install -j4 --retry=3
       - run: rake build
 
   deploy:
     docker:
-      - image: circleci/ruby:2.4
+      - image: circleci/ruby:2.5
     steps:
       - checkout
       - run:
