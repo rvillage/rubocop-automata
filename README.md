@@ -1,5 +1,8 @@
 # rubocop-automata
 
+[![CircleCI](https://circleci.com/gh/rvillage/rubocop-automata/tree/master.svg?style=svg)](https://circleci.com/gh/rvillage/rubocop-automata/tree/master)
+[![Gem Version](https://badge.fury.io/rb/rubocop-automata.svg)](https://badge.fury.io/rb/rubocop-automata)
+
 `rubocop-automata` is automation script for `rubocop --auto-correct` and create pull request.
 
 By requesting a nightly build to CircleCI to execute this script, `rubocop --auto-correct` is invoked, then commit changes and create pull request to GitHub repository if there some changes exist.
