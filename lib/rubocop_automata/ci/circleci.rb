@@ -7,7 +7,7 @@ module RubocopAutomata
     end
 
     def repository_name
-      "#{ENV['CIRCLE_PROJECT_USERNAME']}/#{ENV['CIRCLE_PROJECT_REPONAME']}"
+      /^.+?github.com[:\/](?<repository_name>.+?)\.git$/.match(`git config --get remote.origin.url`)[:repository_name]
     end
 
     def base_branch
