@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rubocop-automata (0.0.2)
-      rubocop
+      rubocop (~> 0.51)
 
 GEM
   remote: https://rubygems.org/
@@ -14,7 +14,7 @@ GEM
     powerpack (0.1.1)
     rainbow (3.0.0)
     rake (12.3.0)
-    rubocop (0.52.0)
+    rubocop (0.52.1)
       parallel (~> 1.10)
       parser (>= 2.4.0.2, < 3.0)
       powerpack (~> 0.1)
@@ -28,9 +28,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 1.16)
   rake
   rubocop-automata!
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
