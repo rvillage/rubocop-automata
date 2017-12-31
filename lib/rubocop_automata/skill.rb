@@ -2,6 +2,7 @@ require 'json'
 require 'shellwords'
 
 module RubocopAutomata
+  # automata skill
   module Skill
     module_function
 
